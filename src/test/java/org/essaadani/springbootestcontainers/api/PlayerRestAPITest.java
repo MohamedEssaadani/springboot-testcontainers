@@ -44,16 +44,6 @@ class PlayerRestAPITest {
         service.deleteAll();
     }
 
-    @BeforeAll
-    static void beforeAll() {
-        postgres.start();
-    }
-
-    @AfterAll
-    static void afterAll() {
-        postgres.stop();
-    }
-
     @Test
     void shouldGetAllPlayers() {
         // players of test

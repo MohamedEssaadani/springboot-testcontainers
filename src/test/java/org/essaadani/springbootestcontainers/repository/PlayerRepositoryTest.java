@@ -33,8 +33,8 @@ class PlayerRepositoryTest {
 
     @BeforeEach
     void setUp() {
-        Player kroos = new Player("Toni", "KROOS", PlayerPosition.CAM.name());
-        Player modric = new Player("Luka", "MODRIC", PlayerPosition.CAM.name());
+        Player kroos = new Player("Toni", "KROOS", PlayerPosition.LM.name());
+        Player modric = new Player("Luka", "MODRIC", PlayerPosition.RM.name());
         playerRepository.saveAll(List.of(kroos, modric));
 
 //        playerRepository.deleteAll();
